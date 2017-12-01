@@ -1,3 +1,36 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, html {
+  // background-image: url('prague-library.jpg');
+  background-image: url('reading.jpg');
+  // height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
+  // color: #ffffff;
+}
+
+.main {
+  margin-top: 20px;
+  color: #ffffff;
+  background-color:rgba(0, 0, 0, 0.15);
+}
+.main tbody:hover {
+  color: #000;
+}
+
+.well {
+  text-align: center;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.welcome {
+  // color: #ffffff;
+}
