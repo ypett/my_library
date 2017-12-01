@@ -3,19 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body, html {
-  background-image: url('prague-library.jpg');
-  height: 50%;
+  // background-image: url('prague-library.jpg');
+  background-image: url('reading.jpg');
+  // height: 50%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-color:rgba(0, 0, 0, 0.5);
-  // opacity: 0.95;
+  background-color:rgba(0, 0, 0, 0.5);
+  opacity: 0.95;
   // color: #ffffff;
 }
 
-.main h1 {
+.main {
+  margin-top: 20px;
   color: #ffffff;
+  background-color:rgba(0, 0, 0, 0.15);
+}
+.main td:hover {
+  color: #000;
 }
 
 .well {
@@ -25,7 +31,6 @@ body, html {
   margin-left: 20px;
 }
 
-
 .welcome {
-  color: #ffffff;
+  // color: #ffffff;
 }
