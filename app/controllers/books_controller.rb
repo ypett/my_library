@@ -25,7 +25,6 @@ class BooksController < ApplicationController
 
   # GET /books/welcome
   def welcome
-
   end
 
   def authors
