@@ -31,7 +31,10 @@ class BooksController < ApplicationController
     @authors = Author.order(:name)
   end
 
-
+  def books_by_author
+    @books = Book.order(:title)
+    @author = Author.find(params[:id])
+  end
 
   # POST /books
   # POST /books.json

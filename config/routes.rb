@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'books/new' => 'books#new'
 
+  get 'books_by_author' => 'books#books_by_author'
+
   resources :books
   devise_for :users
 
