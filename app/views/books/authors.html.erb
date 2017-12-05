@@ -20,7 +20,8 @@
             <% @authors.each do |author| %>
               <tr>
                 <td><%= author.name %></td>
-                <td><%= link_to author.books.count, books_by_author_path(id: author.id) %></td>
+                <td><%= link_to author.books.count, books_by_author_path(id: author.id), class: 'btn btn-default' %></td>
+                <!-- <td><%#= link_to author.books.count, books_by_author_path(id: author.id) %></td> -->
                 <!-- <td><%#= link_to 'Show', authors_path, class: 'btn btn-default' %></td> -->
               </tr>
             <% end %>
