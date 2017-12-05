@@ -11,7 +11,7 @@
           <thead>
             <tr>
               <th>Name</th>
-              <th>ID</th>
+              <th>Books</th>
               <th colspan="2"></th>
             </tr>
           </thead>
@@ -20,8 +20,8 @@
             <% @authors.each do |author| %>
               <tr>
                 <td><%= author.name %></td>
-                <td><%= author.id %></td>
-                <td><%= link_to 'Show', authors_path, class: 'btn btn-default' %></td>
+                <td><%= link_to author.books.count, books_by_author_path(id: author.id) %></td>
+                <!-- <td><%#= link_to 'Show', authors_path, class: 'btn btn-default' %></td> -->
               </tr>
             <% end %>
           </tbody>
