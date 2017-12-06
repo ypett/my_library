@@ -8,7 +8,7 @@
 
 Author.destroy_all
 
-authors = ["John Grisham", "Dan Brown", "Michael Crichton"]
+authors = ["John Grisham", "Dan Brown", "Michael Crichton", "James Patterson", "Robert Ludlum"]
 
 authors.each do |author|
   Author.create(name: author)

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" style="color: #000;">
 
     <%= form_with(model: book, local: true) do |form| %>
       <% if book.errors.any? %>
@@ -26,6 +26,8 @@
 
       <div class="form-group">
         <%= form.label :author_id %>
+        <%# form.text_field :author_id, id: :name, class: 'form-control' %>
+
         <%= form.select :author_id, @authors.collect { |author| [ author.name, author.id ] }, { include_blank: "Please select an author" } %>
       </div>
 

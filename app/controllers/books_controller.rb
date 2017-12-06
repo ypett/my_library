@@ -27,10 +27,12 @@ class BooksController < ApplicationController
   def welcome
   end
 
+  # GET /authors
   def authors
     @authors = Author.order(:name)
   end
 
+  # GET /books_by_author?id=1
   def books_by_author
     @books = Book.order(:title)
     @author = Author.find(params[:id])
